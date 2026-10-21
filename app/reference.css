@@ -1,0 +1,38 @@
+/* BarLock's athletic, block-built intake-form visual language. */
+:root{--bg:#000;--card:#111;--line:#333;--red:#c4162a;--text:#f7f2ec;--muted:#a9a29a}
+body{background:#000;color:var(--text)}
+.wrap{max-width:940px;padding:0 24px 64px}
+header{margin-top:38px;padding:22px 28px;border:3px solid #333;background:#151515;box-shadow:10px 10px 0 var(--red)}
+.brand{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:21px;letter-spacing:.08em;font-weight:400}
+.brand img{width:48px;height:48px;border:1px solid #4a4a4a;border-radius:0;background:#000}
+.brand small{color:#a9a29a;font-family:Inter,Arial,sans-serif}
+.header-tag{color:var(--red)}
+.intro{margin-top:30px;padding:28px 30px 30px;border:3px solid #333;background:#151515;box-shadow:10px 10px 0 var(--red)}
+.badge{padding:0;border:0;border-radius:0;background:transparent;color:var(--red);font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:14px;letter-spacing:.2em}
+h1{margin:10px 0 14px;font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:clamp(36px,6vw,55px);font-weight:900;line-height:1;letter-spacing:.025em;text-transform:uppercase}
+h1 em{color:var(--text)}
+.intro p{max-width:670px;margin:0;color:#d8d0c6}
+.progress-top{margin:30px 0 0;padding:16px 18px 10px;border:2px solid #333;border-bottom:0;background:#111;color:#f7f2ec;font-size:13px;letter-spacing:0;box-shadow:5px 0 0 var(--red)}
+.progress{margin:0 0 26px;padding:4px 18px 16px;border:2px solid #333;border-top:0;background:#111;box-shadow:5px 5px 0 var(--red)}
+.progress:before{top:20px;left:34px;right:34px;background:#4a4a4a}
+.progress>div{color:#a9a29a}.progress>div>span{border:2px solid #4a4a4a;border-radius:0;background:#1b1b1b}.progress .active>span{border-color:#fff;background:var(--red)}
+.card{overflow:hidden;padding:0;border:3px solid #333;border-radius:0;background:#111;box-shadow:10px 10px 0 var(--red)}
+.card-head{align-items:flex-start;margin:0 0 28px;padding:30px clamp(20px,5vw,50px) 20px;border-bottom:2px solid var(--red)}
+.card-head h2,.review h3,.subhead h3{font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-weight:400;letter-spacing:.035em;text-transform:uppercase}
+.card-head h2{font-size:27px}.card-head .eyebrow{color:var(--red);font-family:Impact,Haettenschweiler,"Arial Narrow Bold",sans-serif;font-size:14px;letter-spacing:.18em}.card-head p{color:#a9a29a}
+form>.grid,.errors{margin-left:clamp(20px,5vw,50px);margin-right:clamp(20px,5vw,50px)}
+.field,legend{text-transform:uppercase;letter-spacing:.025em;font-size:13px}.field b,legend b{color:#ef4444}
+input,select,textarea{border:2px solid #4a4a4a;border-radius:0;background:#1b1b1b;color:#f7f2ec}
+input:focus,select:focus,textarea:focus{border-color:#f7f2ec;box-shadow:4px 4px 0 var(--red)}
+input::placeholder,textarea::placeholder{color:#817b75}
+.field small,.helper,.inline{color:#a9a29a}.cert{border:2px solid #4a4a4a;border-radius:0;background:#171717}
+.text-button{color:#ff7280!important;text-transform:uppercase;letter-spacing:.04em}
+.chip{border:2px solid #4a4a4a;border-radius:0;background:#1b1b1b;color:#d2cbc2;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.025em}
+.chip.chosen{border-color:#fff;background:var(--red);color:#fff}.chip input,.check input{accent-color:var(--red)}
+.demo-note{border:1px solid var(--red);border-radius:0;background:#1b1b1b;color:#f7f2ec}.review-block{border-color:#333}.review-row span{color:#a9a29a}
+.errors{border:2px solid var(--red);border-radius:0;background:#1b1b1b}
+.actions{margin:32px 0 0;padding:22px clamp(20px,5vw,50px) 30px;border-top:3px solid #333;background:#000}
+button{border:0;border-radius:0;background:var(--red);box-shadow:5px 5px 0 #fff;font-size:14px;letter-spacing:.04em;text-transform:uppercase}button:hover{background:#e02a3e}.back{border:1px solid #77736d;background:transparent;box-shadow:none;color:#f7f2ec}.back:hover{background:#222}.back:disabled{opacity:.5}
+.actions>span{color:#a9a29a}footer{color:#a9a29a}.success{padding:40px;border:3px solid #333;background:#111;box-shadow:10px 10px 0 var(--red)}
+@media(max-width:600px){.wrap{padding:0 12px 44px}header{margin-top:22px;padding:18px}.intro{padding:22px 20px}.card-head{padding:24px 18px 16px}.card-head h2{font-size:24px}form>.grid,.errors{margin-left:18px;margin-right:18px}.actions{padding:22px 18px 28px}.chips{grid-template-columns:1fr}.progress small{display:none}.success{padding:28px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition-duration:.01ms!important;scroll-behavior:auto!important}}
